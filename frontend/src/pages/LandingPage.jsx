@@ -6,8 +6,9 @@ import { UserContext } from '../context/UserContext';
 import { ProfileInfoCard } from '../components/Cards';
 
 import Login from '../components/Login';
-import Model from '../components/model';
+
 import Signup from '../components/Signup';
+import Model from '../components/model';
 
 
 const LandingPage = () => {
