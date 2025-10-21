@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axioInstance from '../utils/axiosInstance';
 import { API_PATHS } from '../utils/apiPaths';
 import { authStyles as styles } from '../assets/dummystyle';
-import { Inputs } from './inputs';
+import { Inputs } from './Inputs';
 import { validateEmail } from '../utils/helper';
 
 const Login = ({setCurrentPage}) => {
