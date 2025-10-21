@@ -5,7 +5,7 @@ import { UserContext } from '../context/UserContext';
 import axioInstance from '../utils/axiosInstance';
 import { API_PATHS } from '../utils/apiPaths';
 import { validateEmail } from '../utils/helper';
-import { Inputs } from './inputs';
+import { Inputs } from './Inputs';
 
 const Signup = ({setCurrentPage}) => {
     
