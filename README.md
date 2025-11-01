@@ -62,3 +62,7 @@ Follow these steps to run the project locally 👇
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Dwipraj-creator/Resume-Builder.git
+cd Resume-Builder
+npm install
+npm start
+
