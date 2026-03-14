@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin: ["http://localhost:5173"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
   })
 );
 
@@ -29,11 +30,7 @@ app.use("/api/resume", resumeRouter);
 
 app.use(
   "/uploads",
-  express.static(path.join(__dirname, "uploads"), {
-    setHeaders: (res, path) => {
-      res.setHeader("Access-Control-Allow-Origin", "*");
-    },
-  })
+  express.static(path.join(__dirname, "uploads"))
 );
 
 app.get("/", (req, res) => {
